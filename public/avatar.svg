@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a5f;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0d1b2a;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3B82F6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#06B6D4;stop-opacity:1" />
+    </linearGradient>
+    <clipPath id="circle">
+      <circle cx="200" cy="200" r="200" />
+    </clipPath>
+  </defs>
+  <circle cx="200" cy="200" r="200" fill="url(#bg)" />
+  <!-- Body -->
+  <ellipse cx="200" cy="310" rx="90" ry="60" fill="url(#accent)" opacity="0.3" clip-path="url(#circle)" />
+  <ellipse cx="200" cy="295" rx="70" ry="50" fill="#1a2d4a" clip-path="url(#circle)" />
+  <!-- Head -->
+  <circle cx="200" cy="165" r="68" fill="#1e3a5f" />
+  <!-- Face highlights -->
+  <circle cx="200" cy="160" r="60" fill="#2a4a70" />
+  <!-- Initials -->
+  <text x="200" y="180" font-family="Inter, system-ui, sans-serif" font-size="52" font-weight="700"
+    fill="url(#accent)" text-anchor="middle" dominant-baseline="middle">AL</text>
+  <!-- Subtle shine -->
+  <circle cx="200" cy="200" r="200" fill="none" stroke="url(#accent)" stroke-width="1" opacity="0.2" />
+</svg>
